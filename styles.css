@@ -1,0 +1,97 @@
+:root {
+    --paper:        #FCFCFA;
+    --paper-dark:   #F9F6F1;
+    --ink:          #182B3A;
+    --link:         #8C3030;
+    --link-light:   #D9A441;
+    --rule:         #272727;
+
+    --title-font:   "Newsreader", Georgia, serif;
+}
+
+body {
+    background-color: var(--paper);
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,0,0,0.008) 0px,
+            rgba(0,0,0,0.008) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+    
+    color: var(--ink);
+    line-height: 1.6em;
+}
+
+h1, h2, h3 {
+    opacity: 1.0 !important;
+    font-family: var(--title-font);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.navbar {
+    background-color: var(--paper-dark) !important;
+    background-image:
+        repeating-linear-gradient(
+            90deg,
+            rgba(0,0,0,0.008) 0px,
+            rgba(0,0,0,0.008) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+    border-bottom: 1px solid var(--ink);
+    box-shadow: none;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    font-family: var(--title-font);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--ink) !important;
+    border-bottom: 1px solid var(--ink);
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    font-family: var(--title-font);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--link-light) !important;
+    border-bottom: 1px solid var(--link-light);
+}
+
+div {
+    scroll-margin-top: 60px;
+}
+
+hr {
+    color: var(--rule);
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--link-light);
+}
+
+.about-link {
+    color: var(--ink) !important;
+}
+
+.about-link:hover {
+    color: var(--link-light) !important;
+}
+
+.about-entity img {
+  filter:
+    grayscale(80%)
+    sepia(10%)
+    contrast(95%)
+    brightness(105%);
+  mix-blend-mode: multiply;
+}
